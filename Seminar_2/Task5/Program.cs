@@ -2,6 +2,6 @@
 // 456 -> 5 / 782 -> 8 / 918 -> 1
 
 int N = 918;
-string M = N.ToString();
+string number = N.ToString();
 
-Console.WriteLine(M[1]);
+Console.WriteLine(number[1]);
