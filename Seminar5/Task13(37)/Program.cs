@@ -2,13 +2,6 @@
 // Парой считаем первый и последний элемент, второй и предпоследний и т.д. 
 // Результат запишите в новом массиве. СДЕЛАТЬ МИНИМУМ ТРИ МЕТОДА
 
-// int [] CreateArrSize ()
-// {
-//     int Length = Random.Shared.Next(1,10);
-//     int collection = int Length;
-//     return collection;
-// }
-
 int [] CreateArr ()
 {
     int Length = Random.Shared.Next(4,10);
@@ -24,8 +17,6 @@ void FillArray (int [] array)
         array[i] = Random.Shared.Next(1,10);
     }
 }
-
-//int[] array = {2, 1, 4, 5, 6, 3, 1 }; // Ввела массив вручную, чтобы проверить метод умножения
 
 void PrintArray1 (int [] Numbers)
 {
