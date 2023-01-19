@@ -44,11 +44,9 @@ int GetNumber()
     {
         Console.Write("такого числа в массиве нет");
     }
-    else Console.WriteLine(number); // убрать из вывода
     return number;
 }
 
-// изобретение колеса:
 void FindNumberPosition (int[,] arr, int numb)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
