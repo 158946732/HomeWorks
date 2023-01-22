@@ -6,16 +6,15 @@
 int GetNumber()
 {
     Console.WriteLine("Введите число N (больше единицы) ");
-    return int.Parse(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 int endNumber = GetNumber();
 
 void ShowInt(int number)
 {
-    if (number < 0) Console.Write($"{number} не натуральное число");
-    if (number == 0) return;
-    Console.Write("{0,4}", number);
+    if (number <= 0) return;
+    Console.Write($"{number} ");
     ShowInt(number - 1);
 }
 ShowInt(endNumber);
